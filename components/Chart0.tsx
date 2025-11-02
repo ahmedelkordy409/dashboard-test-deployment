@@ -1,6 +1,6 @@
 'use client'
 
-import { Bar } from 'react-chartjs-2'
+import { Line } from 'react-chartjs-2'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -44,18 +44,9 @@ const chartData = {
         61000,
         58000
       ],
-      "backgroundColor": "rgba(59, 130, 246, 1)"
-    },
-    {
-      "label": "customers",
-      "data": [
-        120,
-        145,
-        135,
-        168,
-        155
-      ],
-      "backgroundColor": "rgba(16, 185, 129, 1)"
+      "borderColor": "rgba(59, 130, 246, 1)",
+      "backgroundColor": "rgba(59, 130, 246, 0.1)",
+      "fill": false
     }
   ]
 }
@@ -66,14 +57,18 @@ const chartOptions: any = {
   "plugins": {
     "legend": {
       "position": "top"
+    },
+    "title": {
+      "display": false
     }
-  }
+  },
+  "title": "revenue Trend Over Time"
 }
 
 export default function Chart0() {
   return (
     <div className="bg-white rounded-lg shadow-md p-6">
-      <Bar data={chartData} options={chartOptions} />
+      <Line data={chartData} options={chartOptions} />
     </div>
   )
 }

@@ -4,7 +4,7 @@ AI-Generated Analytics Dashboard built with Next.js and Chart.js.
 
 ## 🚀 Features
 
-- Bar Chart 1: Data Visualization
+- Line Chart 1: revenue Trend Over Time
 
 ## 📊 Visualizations
 
