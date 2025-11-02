@@ -60,7 +60,7 @@ const chartData = {
   ]
 }
 
-const chartOptions = {
+const chartOptions: any = {
   "responsive": true,
   "maintainAspectRatio": false,
   "plugins": {
